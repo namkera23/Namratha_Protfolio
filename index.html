@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pradnya Jagtap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-indigo-600  shadow-2xl text-gray-900">
+
+  <!-- Navbar -->
+  <header class=" bg-indigo-400 shadow-md sticky top-0 z-50">
+    <div class="max-w-9xl mx-auto px-4 py-4 flex justify-between ">
+      <h1 class="text-4xl font-bold text-black">Pradnya Jagtap</h1>
+      <nav>
+        <ul class="flex space-x-6 text-sm my-3 font-medium">
+          <li><a href="#home" class="text-lg  py-4 hover:text-white">Home</a></li>
+          <li><a href="#skills" class="text-lg  py-4 hover:text-white">Skills</a></li>
+          <li><a href="#projects" class="text-lg  py-4 hover:text-white">Projects</a></li>
+          <li><a href="#certificates" class="text-lg py-4 hover:text-white">Certificates</a></li>
+          <li><a href="#contact" class="text-lg  py-4 hover:text-white">Contact</a></li>
+        </ul>  
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+
+  <section id="home" class="min-h-screen bg-gradient-to-br from-indigo-200 -mt-20 rounded-bl-xxl rounded-br-full   shadow-2xl  to-white flex flex-col-reverse md:flex-row items-center justify-center px-6 py-10">
+    <div class="md:w-1/2 text-center md:text-left space-y-6">
+      <h1 class="text-6xl font-extrabold leading-tight text-gray-900 ">
+        Hi, I'm <span class="text-indigo-600">Pradnya Jagtap</span>
+      </h1>
+      <h2 class="text-2xl text-gray-700 font-medium">
+        <span
+          id="typing-text"
+          class="text-indigo-500 font-semibold inline-block min-w-[240px] h-[25px]"
+        ></span>
+      </h2>
+      
+      <p class="text-gray-600 text-lg mt-2">
+        Passionate Full-Stack Developer building efficient and scalable web applications.
+      </p>
+  
+      <div class="flex flex-wrap gap-4 mt-6">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/pradnya-jagtap-348610270/" target="_blank"
+          class="flex items-center gap-2 px-5 py-3 bg-indigo-800 text-white font-semibold rounded-lg hover:bg-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="w-5 h-5" alt="LinkedIn" />
+          LinkedIn
+        </a>
+  
+        <!-- GitHub -->
+        <a href="https://github.com/" target="_blank"
+          class="flex items-center gap-2 px-5 py-3 bg-indigo-800 text-white font-semibold rounded-lg hover:bg-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub" />
+          GitHub
+        </a>
+        <a href="Pradnya_Jagtap_BE_IT_DBIT.pdf" download="Pradnya_Resume.pdf" target="_blank"
+          class="flex items-center gap-2 px-5 py-3 bg-indigo-800 text-white font-semibold rounded-lg transition">
+          <img src="/src/images/download_icon-removebg-preview.jpg" class="w-5 h-5" />
+          Download Resume
+        </a>
+      </div>
+    </div>
+  
+    <!-- Profile Image
+    <div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+      <img src="/src/images/my2.png" alt="Profile" class=" rounded-e-full bg-indigo-800  w-80 h-150 object-cover" />
+    </div> -->
+  </section>
+  
+
+  <!-- Typing Animation Script -->
+  <script>
+    const textArray = ["Software Developer", "MERN Stack Engineer", "Tech Enthusiast"];
+    let typingElement = document.getElementById("typing-text");
+    let index = 0, charIndex = 0, isDeleting = false;
+
+    function type() {
+      const currentText = textArray[index];
+      typingElement.textContent = currentText.substring(0, charIndex);
+      if (!isDeleting && charIndex < currentText.length) {
+        charIndex++; setTimeout(type, 100);
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--; setTimeout(type, 50);
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) index = (index + 1) % textArray.length;
+        setTimeout(type, 0);
+      }
+    }
+    type();
+  </script> 
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-100 my-10 mx-4 rounded-full scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 mx-auto" /><p>HTML</p></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-12 mx-auto" /><p>CSS</p></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 mx-auto" /><p>JavaScript</p></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 mx-auto" /><p>React.js</p></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-12 mx-auto" /><p>Node.js</p></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-12 mx-auto" /><p>MongoDB</p></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-12 mx-auto" /><p>Python</p></div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-12 mx-auto" /><p>Java</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="py-20 bg-white scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-inner hover:shadow-xl transition text-center transform hover:-translate-y-1 ">
+          <img src="/src/images/quiksendm.png" class="h-32 w-60 mx-auto mb-4 shadow-lg" alt="QuikSend Logo">
+          <h4 class="text-lg font-semibold text-indigo-700 mb-2 text-center">QuikSend</h4>
+          <p class="text-gray-700 mb-4 ">Bulk email marketing platform with custom templates and scheduled delivery using Python Flask.
+            QuikSend is an email marketing platform built using Python Flask.
+            It allows users to send bulk emails with customizable templates and schedule campaigns.
+            The system includes secure login, drag-and-drop template editing, and CSV-based subscriber management.</p>
+            <p class="text-sky-700 my-2 mx-0 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">Python Flask</p>
+            <p class="text-sky-700 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">MySQL</p>
+            <p class="text-sky-700 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">SMTP</p>
+            
+            <div class="flex justify-center">
+              <a href="https://github.com/Pradnyajagtap-3660/Quiksend_mern" class="inline-flex items-center px-5 py-2 my-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 transition">
+                View
+              </a>
+            </div>
+            
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-inner hover:shadow-xl transition transform hover:-translate-y-1 text-center">
+          <img src="/src/images/fram.png" class="h-32 mx-auto mb-4  shadow-lg" alt="FramVault Logo">
+          <h4 class="text-xl text-center font-semibold mb-2 text-indigo-700">FramVault </h4>
+          <p class="text-gray-700 mb-4">Developed a desktop application to streamline the storage and tracking of agricultural produce in farm warehouses.
+             The system includes features such as inventory management. Implemented a user-friendly interface using JavaFX and integrated a MySQL database, improving efficiency and reducing manual errors in warehouse operations.</p>
+
+          <p class="text-sky-700 my-2 mx-0 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">JavaFx</p>
+          <p class="text-sky-700 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">MySQL</p>
+          <p class="text-sky-700 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">Java</p>
+
+          <div class="flex justify-center">
+            <a href="https://github.com/Pradnyajagtap-3660/Fram_Vault" class="inline-flex items-center px-5 py-2 my-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 transition">
+              
+              View
+            </a>
+          </div>
+          
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-inner hover:shadow-xl transition text-center transform hover:-translate-y-1 ">
+          <img src="/src/images/quiksendm.png" class="h-32 w-60 mx-auto mb-4 shadow-lg" alt="QuikSend Logo">
+          <h4 class="text-xl text-center font-semibold mb-2 text-indigo-700">QuikSend</h4>
+          <p class="text-gray-700 mb-4">Built a full-stack bulk email marketing platform that enables users to create,
+             schedule, and send mass email campaigns with personalized content, contact import via CSV,
+              dynamic template editing, and campaign management. Designed using a microservices architecture for scalability, with role-based access control and user-specific data handling.
+
+          </p>
+
+          <p class="text-sky-700 my-2 mx-0 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">React.js</p>
+          <p class="text-sky-700 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">Mongodb</p>
+          <p class="text-sky-700 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">Express.js</p>
+          <p class="text-sky-700 bg-blue-100 text-xs rounded-sm px-2 py-1 inline-block">Node.js</p>
+
+          <div class="flex justify-center">
+            <a href="https://github.com/Pradnyajagtap-3660/Quiksend_mern" class="inline-flex items-center px-5 py-2 my-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 transition">
+              View
+            </a>
+          </div>
+          
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="certificates" class="py-20 bg-gray-100 rounded-full mx-4 my-5 scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Certificates</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Certificate 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+          <h4 class="text-lg font-semibold text-indigo-700 mb-2">Python Flask Bootcamp</h4>
+          <p class="text-gray-700 text-sm">Completed hands-on training in web development using Flask framework.</p>
+
+          <div class="flex justify-center mt-4">
+            <a href="https://drive.google.com/file/d/1gjlvsyQU0gr29OP99TbGxpDEYapVeILd/view?usp=drive_link" class="inline-flex items-center px-5 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 transition">
+              View
+            </a>
+          </div>
+        </div>
+  
+        <!-- Certificate 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+          <h4 class="text-lg font-semibold text-indigo-700 mb-2">Edunet: Cyber Security</h4>
+          <p class="text-gray-700 text-sm">Learned essential security concepts including threats, encryption, and ethical practices.</p>
+          <div class="flex justify-center mt-4">
+            <a href="https://drive.google.com/file/d/13vLh9qMCbU_gjmCVOoa5rSa0NrejYIhb/view?usp=drive_link" class="inline-flex items-center px-5 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 transition">
+              View
+            </a>
+          </div>
+        </div>
+  
+        <!-- Certificate 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+          <h4 class="text-lg font-semibold text-indigo-700 mb-2">Android Developer Internship</h4>
+          <p class="text-gray-700 text-sm">Participated in a virtual internship program focused on Android app development.</p>
+          <div class="flex justify-center mt-4">
+            <a href="https://drive.google.com/file/d/1g7X3GufxNmJkqT95NYTWIHYYx3FmFMWI/view?usp=drive_link" class="inline-flex items-center px-5 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 transition">
+              View
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white scroll-mt-24 ">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
+      <p class="text-gray-700 mb-6">Want to collaborate? Feel free to drop a message!</p>
+      <form id="contact-form" class="max-w-md mx-auto bg-gray-50 p-6 rounded-lg shadow-md">
+  <div class="mb-4">
+    <input type="text" name="name" placeholder="Your Name" required
+      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+  </div>
+  <div class="mb-4">
+    <input type="email" name="email" placeholder="Your Email" required
+      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+  </div>
+  <div class="mb-4">
+    <textarea name="message" rows="4" placeholder="Your Message" required
+      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+  </div>
+  <button type="submit"
+    class="w-full px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500 transition">
+    Send Message
+  </button>
+
+  <!-- Feedback text -->
+  <p id="response" class="mt-4 text-center text-sm"></p>
+</form>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class=" text-center py-6 text-gray-600 text-sm">
+    © 2025 Pradnya Jagtap. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const res = document.getElementById("response");
+
+  const data = {
+    name: this.name.value,
+    email: this.email.value,
+    message: this.message.value,
+  };
+
+  try {
+    const response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+    res.textContent = result.message;
+    res.style.color = result.success ? "green" : "red";
+    this.reset();
+  } catch (err) {
+    res.textContent = "Something went wrong!";
+    res.style.color = "red";
+  }
+});
+</script>
+
