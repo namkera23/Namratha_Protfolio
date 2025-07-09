@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, "src")));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "tp.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 // POST route for form submissio
 app.post("/contact", async (req, res) => {
