@@ -21,14 +21,14 @@ app.post("/contact", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "pradnyajagtap3660@gmail.com",       // 🔁 replace with your Gmail
-        pass: "urmm cwpi edhj cumr",          // 🔁 use App Password (not your normal password)
+        user: "namratha.karkera30@gmail.com",       // 🔁 replace with your Gmail
+        pass: "wxvb ownq tsbl puuj",          // 🔁 use App Password (not your normal password)
       },
     });
 
     const mailOptions = {
       from: email,
-      to: "pradnyajagtap3660@gmail.com",           // 🔁 where you want to receive messages
+      to: "namratha.karkera30@gmail.com",           // 🔁 where you want to receive messages
       subject: `Portfolio Contact from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
