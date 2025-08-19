@@ -6,8 +6,7 @@ Welcome to my personal portfolio website! This site highlights my projects, skil
 
 ## 📌 Live Demo
 
-👉   https://pradnyajprotfolio.vercel.app/
-
+👉   https://namkera23.github.io/Namratha_Protfolio/
 ---
 
 ## 🛠️ Built With
