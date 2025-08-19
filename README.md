@@ -1,4 +1,4 @@
-# 🌐 Pradnya Jagtap's Portfolio Website
+# 🌐 Namratha Karkera Portfolio Website
 
 Welcome to my personal portfolio website! This site highlights my projects, skills, and background as a developer. It's built using modern tools and technologies to offer a clean and engaging experience.
 
